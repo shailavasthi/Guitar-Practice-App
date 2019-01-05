@@ -2,11 +2,116 @@
 <html>
 <head>
 	<title>Guitar Practice Routine Generator</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
+	
+	<ul class="nav justify-content-center">
+		<li class="nav-item nav-tabs">
+			<a class="nav-link active" href="#">Generator</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="scales.html">Scales</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="chords.html">Chords</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="technique.html">Technique</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="repertoire.html">Repertoire</a>
+		</li>
+	</ul>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+	  		<h1 class="display-4">Guitar Practice Session Generator</h1>
+	  		<p class="lead">Input your area of desired improvement for the session and the session length,
+	  		and the tool will generate a practice session for you. Follow the provided links for more 
+	  		information on what to practice</p>
+		</div>
+	</div>
+
+	<div class='container'>
+		<div class='row'>
+			<div class='col-sm'>
+				<div>
+					<form id='form'>
+						<!--
+						<h2>Session Priority</h2>
+						<div class='form-check'>
+							<input class='form-check-input' type='radio' name='area' id='tm' value='tm'>
+							<label class='form-check-label' for='tm'>
+								Technique
+							</label>
+						</div>
+
+						<div class='form-check'>
+							<input class='form-check-input' type='radio' name='area' id='mi' value='mi'>
+							<label class='form-check-label' for='mi'>
+								Improvisation
+							</label>
+						</div>
+
+						<div class='form-check'>
+							<input class='form-check-input' type='radio' name='area' id='re' value='re'>
+							<label class='form-check-label' for='re'>
+								Repertoire Expansion
+							</label>
+						</div>
 
 
+						<h2>Length of Session (minutes)</h2>
+						<input type="text" name="time">
+
+
+						<input type="submit" name="">-->
+
+						<div class='form-row'>
+							<div class='form-group col-md-4'>
+								<label for='area'>Session Priority</label>
+								<select class='custon-select mr-sm-2' name='area' id='area'>
+									<option value='tm'>Technique</option>
+									<option value='mi'>Improvisation</option>
+									<option value='re'>Repertoire</option>
+								</select>
+							</div>
+							<div class='form-group col-md-4'>
+								<label for='time'>Session Length</label>
+								<input type='text' class='form-control' id='time' name='time'>
+							</div>
+
+							
+						</div>
+						<button type='submit' class='btn btn-primary' id='submit'>Submit</button>
+							
+
+
+					</form>
+				</div>
+			</div>
+
+			<div class='col-sm'>
+				<div class='routine'>
+					<h1 class='heading'></h1>
+					<h2 class='subheading'></h2>
+					<div class='block-container'>
+						<h3 class='block1'></h3>
+						<p class='block1-subtext'></p>
+						<h3 class='block2'></h3>
+						<p class='block2-subtext'></p>
+						<h3 class='block3'></h3>
+						<p class='block3-subtext'></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="scripts/script.js"></script>
 
 
 </body>
