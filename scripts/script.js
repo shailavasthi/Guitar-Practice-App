@@ -9,8 +9,6 @@ var block2Subtext = document.querySelector('.block2-subtext');
 var block3 = document.querySelector('.block3');
 var block3Subtext = document.querySelector('.block3-subtext');
 
-// area handler
-	//return array [label area1 ....]
 
 function areaHandler(area){
 
@@ -25,20 +23,16 @@ function areaHandler(area){
 	return blocks;
 }
 
-//time handler
-	// return array [timetotal time1 ....]
-
 function timeHandler(time){
 	var time1 = Math.round(time * 0.416);
 	var time2 = Math.round(time * 0.333);
 	var time3 = Math.round(time * 0.25);
 	var times = [time, time1, time2, time3]
-	
+
 	return times;
 
 }
 
-//edit text
 function editText(blocks, times){
 
 	heading.textContent = `Practice Session`;
@@ -51,9 +45,6 @@ function editText(blocks, times){
 	block3Subtext.textContent = ``;
 
 }
-
-
-//event listener
 
 form.addEventListener('submit', function(e){
 	e.preventDefault();
