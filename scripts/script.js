@@ -1,4 +1,3 @@
-//add vars for querySelector
 var form = document.querySelector('form');
 var heading = document.querySelector('.heading');
 var subheading = document.querySelector('.subheading');
@@ -27,7 +26,7 @@ function timeHandler(time){
 	var time1 = Math.round(time * 0.416);
 	var time2 = Math.round(time * 0.333);
 	var time3 = Math.round(time * 0.25);
-	var times = [time, time1, time2, time3]
+	var times = [time, time1, time2, time3];
 
 	return times;
 
@@ -36,7 +35,7 @@ function timeHandler(time){
 function editText(blocks, times){
 
 	heading.textContent = `Practice Session`;
-	subheading.textContent = `Focus: ${blocks[0]}`;
+	subheading.textContent = `Focus: ${blocks[0]} (Total Time: ${times[0]}m)`;
 	block1.textContent = `Block 1: ${blocks[1]} (Time: ${times[1]}m)`;
 	block1Subtext.textContent = ``;
 	block2.textContent = `Block 2: ${blocks[2]} (Time: ${times[2]}m)`;
